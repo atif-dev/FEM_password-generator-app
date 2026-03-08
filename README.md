@@ -34,13 +34,13 @@ Users should be able to:
 
 ### Screenshots
 
-![PC View]()
-![Mobile view]()
+![PC View](https://github.com/atif-dev/FEM_password-generator-app/blob/master/screenshots/Screen%201440%20x%20900.png?raw=true)
+![Mobile view](https://github.com/atif-dev/FEM_password-generator-app/blob/master/screenshots/iPhone%208(375px%20width).png?raw=true)
 
 ### Links
 
 - Frontend Mentor solution url:   
-- Live Site URL:
+- Live Site URL: https://atif-dev.github.io/FEM_password-generator-app/
 
 ### My process
 
@@ -54,8 +54,10 @@ Users should be able to:
 ### What I learned
 
   - Styling input type range.
-  - Regular expressions.
   - Copy to clip board.
+  - Regular expressions.
+  - The five factors: length, character pool size, randomness, structural predictability and known-pattern detection
+    are involved in strength of a password.(This intermediate project does not include high level implementation of these factors)
 
 ### Continued development
 
