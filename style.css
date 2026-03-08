@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "JetBrains Mono", monospace;
+}
+
+:root{
+	--grey-800: #24232C;
+	--grey-700: #54535B;
+	--grey-850: #18171F;
+	--grey-200: #E6E5EA;
+	--green-200: #A4FFAF;
+	--grey-600: #817D92;
+	--textPreSet3: 1.125rem;
+	--textPreSet4: 1rem;
+	--grey-950: #08070B;
+}
+
+body{
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	background: var(--grey-950);
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	width: 540px;
+	gap: 1.5rem;
+}
+
+.heading{
+	font-size:1.5rem;
+	text-align: center;
+	margin-bottom: 1.875rem;
+	color: var(--grey-600);
+	margin-bottom: .5rem;
+}
+
+.password-block{
+	background: var(--grey-800);
+	width: 100%;
+	padding: 1rem 2rem;
+	font-size: 2rem;
+	border: none;
+	font-weight: bold;
+	color: var(--grey-200);
+	display: flex;
+  justify-content: space-between;
+}
+
+.password-sample{
+	color: var(--grey-700);
+	font-size: 2rem;
+	font-weight: bold;
+	max-width: 77%;
+	overflow: auto;
+	display: block;
+	white-space: nowrap;
+}
+
+.chars-label_value{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.section-two{
+	background: var(--grey-800);
+	padding: 1.5em 2em;
+	display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2.5em;
+}
+
+.slider-label{
+	font-size: var(--textPreSet3);
+	color: var(--grey-200);
+}
+
+.slider-value{
+	font-size: 2rem;
+	color: var(--green-200);
+}
+
+.slider{
+	-webkit-appearance: none;
+	width: 100%;
+	height: 8px;
+	background: var(--grey-850);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: white;
+  cursor: pointer;
+  border-radius: 2em;
+}
+
+.slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: white;
+  cursor: pointer;
+  border-radius: 2em;
+  border: 2px solid white;
+}
+
+.slider::-moz-range-progress{
+	background-color: var(--green-200);
+	height: .5em;
+}
+
+.generate-btn{
+  padding: 1.5rem 0;
+  font-size: var(--textPreSet3);
+  background: var(--green-200);
+  border:none;
+  font-weight: bold;
+  border:2px solid var(--green-200);
+  transition-duration: 0.3s;
+}
+
+.generate-btn-text{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+	text-transform: uppercase;
+}
+
+input[type="checkbox"]{
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--grey-200);
+}
+
+.section-two-sub2{
+	display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section-two-sub2 div{
+	display: flex;
+	gap:1.5em;
+	align-items: center;
+}
+
+.checkbox-label{
+	font-size: var(--textPreSet3);
+	color: var(--grey-200);
+}
+
+.strength-label{
+	color: var(--grey-600);
+	font-size: var(--textPreSet3);
+	text-transform: uppercase;
+}
+
+.strength-bar{
+  width: 10px;
+  height: 28px;
+  border: 2px solid var(--grey-200);
+}
+
+.strength-bars{
+	display: flex;
+	gap: 0.5em;
+}
+
+.strength-block{
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em;
+  background: var(--grey-850);
+}
+
+input[type="checkbox"]:hover{
+	border: 2px solid var(--green-200);
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+	background: var(--green-200) url("./assets/images/icon-check.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: 2px solid var(--green-200);
+}
+
+.btn-arrow{
+	position: relative;
+	bottom: .5px;
+}
+
+.strength-status_strength-bars{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.strength-status{
+	color: #E6E5EA;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.copied-block{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.copied-text{
+	color: #A4FFAF;
+  font-size: 1.125rem;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+.error{
+	text-align: center;
+  color: red;
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
+
+.copied-block button{
+	height: 24px;
+	background: var(--grey-800);
+  border: none;
+}
+
+.copied_btn, .slider, .checkbox{
+	transition-duration: 0.3s;
+}
+
+.copied_btn:focus-visible{
+	outline: 2px dotted yellow;
+	outline-offset: .3rem;
+}
+
+.slider:focus-visible{
+	outline: 2px dotted yellow;
+	outline-offset: .3rem;
+}
+
+.checkbox:focus-visible{
+	outline: 2px dotted yellow;
+	outline-offset: .3rem;
+}
+
+.generate-btn:focus-visible{
+	outline: 2px dotted yellow;
+	outline-offset: .3rem;
+}
+
+@media(hover: hover) and (pointer: fine) {
+	.copied-icon:hover{
+		fill: white;
+		cursor: pointer;
+	}
+
+	.slider::-webkit-slider-thumb:hover{
+		background: var(--grey-850);
+		border: 2px solid rgb(164, 255, 175);
+	}
+
+	.slider::-moz-range-thumb:hover{
+		background: var(--grey-850);
+		border: 2px solid rgb(164, 255, 175);
+	}
+
+	.generate-btn:hover{
+		background-color: var(--grey-800);
+		border: 2px solid var(--green-200);
+		cursor: pointer;
+	}
+
+	.generate-btn:hover .generate-btn-text{
+		color: var(--green-200);
+	}
+
+	.generate-btn:hover .generate-btn-arrow{
+		fill: var(--green-200);
+	}
+}
+
+@media (max-width: 767px){
+	main{
+		width: 100vw;
+		padding: 0 1rem;
+	}
+
+	.section-two{
+		padding: 1em 1em;
+	}
+
+	.generate-btn{
+		margin-top: -1rem;
+		padding: 1rem 0;
+	}
+
+	.strength-block{
+		white-space: nowrap;
+    gap: 1rem;
+	}
+}
+
+@media (max-width: 425px){
+	main{
+		gap: 1rem;
+	}
+
+	.heading{
+		margin-bottom: unset;
+		font-size: var(--textPreSet4);
+	}
+
+	.password-block{
+		font-size: 1.5rem;
+		padding: 1rem 1rem;
+	}
+
+	.section-two{
+		padding: 1em 1em;
+	}
+
+	.section-two-sub2 div{
+		gap:1em;
+	}
+
+	.slider-label {
+		font-size: var(--textPreSet4);
+	}
+
+	.strength-label{
+		font-size: var(--textPreSet4);
+	}
+
+	.slider-value {
+    font-size: 1.5rem;
+  }
+
+	.strength-status{
+		font-size: 1.125rem;
+	}
+
+	.generate-btn{
+		font-size: var(--textPreSet4);
+		
+	}
+
+	.generate-btn-text{
+		gap:1rem;
+	}
+
+	.password-sample{
+		max-width: 67%;
+		font-size: 1.5rem;
+	}
+
+	.copied-text{
+    font-size: 1rem;
+  }
+
+	.checkbox-label{
+		font-size: var(--textPreSet4);
+	}
+
+	.strength-block{
+		padding: 0.875em 1em;
+		overflow: auto;
+	}
+}
+

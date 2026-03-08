@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontendmentor password generator app solution">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="script.js"></script>
+  
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+  <main>
+    <h1 class="heading">Password Generator</h1>
+
+    <div>
+      <div class="password-block">
+        <span id="password" class="password-sample">P4$5W0rD!</span>
+        <div class="copied-block">
+          <span id="copied_text" class="copied-text">COPIED</span>
+          <button id="copied_btn" class="copied_btn">
+            <svg class="copied-icon" width="21" height="24" xmlns="http://www.w3.org/2000/svg" fill="#A4FFAF"><path d="M20.341 3.091 17.909.659A2.25 2.25 0 0 0 16.319 0H8.25A2.25 2.25 0 0 0 6 2.25V4.5H2.25A2.25 2.25 0 0 0 0 6.75v15A2.25 2.25 0 0 0 2.25 24h10.5A2.25 2.25 0 0 0 15 21.75V19.5h3.75A2.25 2.25 0 0 0 21 17.25V4.682a2.25 2.25 0 0 0-.659-1.591ZM12.469 21.75H2.53a.281.281 0 0 1-.281-.281V7.03a.281.281 0 0 1 .281-.281H6v10.5a2.25 2.25 0 0 0 2.25 2.25h4.5v1.969a.282.282 0 0 1-.281.281Zm6-4.5H8.53a.281.281 0 0 1-.281-.281V2.53a.281.281 0 0 1 .281-.281H13.5v4.125c0 .621.504 1.125 1.125 1.125h4.125v9.469a.282.282 0 0 1-.281.281Zm.281-12h-3v-3h.451c.075 0 .147.03.2.082L18.667 4.6a.283.283 0 0 1 .082.199v.451Z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-two">
+      <div>
+        <div class="chars-label_value">
+          <label class="slider-label" for="slider">Character Length</label>
+          <p id="slider-value" class="slider-value">0</p>
+        </div>
+        <input id="slider" class="slider" type="range" min="0" max="20" name="slider" value="0">
+      </div>
+      <div class="section-two-sub2">
+        <div>
+          <input id="uppercase_letters" class="checkbox" type="checkbox" name="uppercase letters" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+          <label class="checkbox-label" for="uppercase_letters">Include Uppercase Letters</label>
+        </div>
+        <div>
+          <input id="lowercase_letters" class="checkbox" type="checkbox" name="lowercase letters" value="abcdefghijklmnopqrstuvwxyz">
+          <label class="checkbox-label" for="lowercase_letters">Include Lowercase Letters</label>
+        </div>
+        <div>
+          <input id="numbers" class="checkbox" type="checkbox" name="numbers" value="0123456789">
+          <label class="checkbox-label" for="numbers">Include Numbers</label>
+        </div>
+        <div>
+          <input id="symbols" class="checkbox" type="checkbox" name="symbols" value="!@#$%^&*()_+-=[]{}|;:,.<>?">
+          <label class="checkbox-label" for="symbols">Include Symbols</label>
+        </div>
+      </div>
+
+      <p id="error" class="error"></p>
+
+      <div class="strength-block">
+        <div><p class="strength-label">Strength</p></div>
+        <div class="strength-status_strength-bars">
+          <p id="strength_status" class="strength-status"></p>
+          <div class="strength-bars">
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <button id="generate_btn" class="generate-btn">
+        <span class="generate-btn-text"><span>Generate</span>
+          <svg class="generate-btn-arrow" width="12" height="12" xmlns="http://www.w3.org/2000/svg" fill="#24232C"><path d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
+        </span>
+      </button>
+    </div>
+  </main>
+</body>
+</html>
