@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Frontend Mentor solution url:   
+- Frontend Mentor solution url: https://www.frontendmentor.io/solutions/responsive-password-generator-app-nqA1vFeoNc   
 - Live Site URL: https://atif-dev.github.io/FEM_password-generator-app/
 
 ### My process
