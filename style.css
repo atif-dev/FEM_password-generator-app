@@ -36,7 +36,6 @@ main{
 .heading{
 	font-size:1.5rem;
 	text-align: center;
-	margin-bottom: 1.875rem;
 	color: var(--grey-600);
 	margin-bottom: .5rem;
 }
@@ -124,10 +123,8 @@ main{
   padding: 1.5rem 0;
   font-size: var(--textPreSet3);
   background: var(--green-200);
-  border:none;
   font-weight: bold;
   border:2px solid var(--green-200);
-  transition-duration: 0.3s;
 }
 
 .generate-btn-text{
@@ -212,7 +209,7 @@ input[type="checkbox"]:checked{
 }
 
 .strength-status{
-	color: #E6E5EA;
+	color: var(--grey-200);
   font-size: 1.5rem;
   text-transform: uppercase;
 }
@@ -237,34 +234,16 @@ input[type="checkbox"]:checked{
   margin-bottom: -1em;
 }
 
-.copied-block button{
+.copied-btn{
 	height: 24px;
 	background: var(--grey-800);
   border: none;
 }
 
-.copied_btn, .slider, .checkbox{
+.copied-btn:focus-visible,.slider:focus-visible,.checkbox:focus-visible,.generate-btn:focus-visible{
+	outline: 2px dotted yellow;
+	outline-offset: .3rem;
 	transition-duration: 0.3s;
-}
-
-.copied_btn:focus-visible{
-	outline: 2px dotted yellow;
-	outline-offset: .3rem;
-}
-
-.slider:focus-visible{
-	outline: 2px dotted yellow;
-	outline-offset: .3rem;
-}
-
-.checkbox:focus-visible{
-	outline: 2px dotted yellow;
-	outline-offset: .3rem;
-}
-
-.generate-btn:focus-visible{
-	outline: 2px dotted yellow;
-	outline-offset: .3rem;
 }
 
 @media(hover: hover) and (pointer: fine) {

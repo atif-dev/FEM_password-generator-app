@@ -167,7 +167,7 @@ function showPasswordStrength(){
 function copyToClipboard() {
   const samplePassword = "P4$5W0rD!";
   if(password.innerText === samplePassword){
-    error.innerHTML = "--Please Generate Password--"
+    error.innerHTML = "--Please Generate Another Password--"
     return;
   }
   navigator.clipboard.writeText(password.innerText);
