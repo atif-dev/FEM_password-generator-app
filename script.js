@@ -110,6 +110,7 @@ function generateRandomPassword(pool,charLength){
   }
   
   password.innerText = randomPassword;
+  password.style.color = "#E6E5EA";
 }
 
 function showPasswordStrength(){
